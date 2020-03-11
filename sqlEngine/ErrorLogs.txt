@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "driver_final.py", line 82, in <module>
+    pr=subprocess.check_output(cmd,shell=True)
+  File "/usr/lib/python3.6/subprocess.py", line 356, in check_output
+    **kwargs).stdout
+  File "/usr/lib/python3.6/subprocess.py", line 438, in run
+    output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command 'hadoop jar /home/hadoop/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.1.2.jar -files example.py,select_reducer.py -mapper "python3 example.py 2 all " -reducer "python3 select_reducer.py " -input amajan.csv -output /plx 2>Hadoop_Logs' returned non-zero exit status 127.

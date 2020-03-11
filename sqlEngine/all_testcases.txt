@@ -1,0 +1,36 @@
+i) Load:
+	LOAD /amazon/amajan.csv AS (year:int,state:string,month:string,number:float,date:string)
+
+ii) Select queries-
+
+1. Simple Select:
+	SELECT * FROM /amazon/amajan.csv
+
+2. Simple Project:
+	SELECT date FROM /amazon/amajan.csv
+
+3. Select with WHERE:
+	SELECT year from /amazon/amajan.csv WHERE year >= 2000
+	SELECT month from /amazon/amajan.csv WHERE year >= 2000
+	SELECT * from /amazon/amajan.csv WHERE year <= 2000
+
+iii) Aggregate queries-
+
+1. min:
+	a) SELECT year from /amazon/amajan.csv WHERE year >= 2000 AGGREGATE_BY min
+
+	b) SELECT number FROM /amazon/amajan.csv AGGREGATE_BY min
+
+2. max:
+	a) SELECT year from /amazon/amajan.csv WHERE year >= 2000 AGGREGATE_BY max
+
+	b) SELECT number FROM /amazon/amajan.csv AGGREGATE_BY max
+
+2. count:
+	a) SELECT * FROM /amazon/amajan.csv AGGREGATE_BY count
+
+	b) SELECT month FROM /amazon/amajan.csv AGGREGATE_BY count
+
+	c) SELECT year from /amazon/amajan.csv WHERE year > 2000 AGGREGATE_BY count
+
+	d) SELECT * from /amazon/amajan.csv WHERE year < 2000 AGGREGATE_BY count

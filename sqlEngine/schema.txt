@@ -1,0 +1,1 @@
+year:int,state:string,month:string,number:float,date:string
