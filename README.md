@@ -12,5 +12,5 @@ Mini-Hive implements functionalities of SQL like SELECT and PROJECT queries alon
 
 LOAD query is used to load the database from the HDFS and also to store the schema in a file in the HDFS.
 
-![MR Flow chart](https://github.com/sharanyavenkat25/MapReduce-based-Mini-HIVE/sqlEngine/MapReduce_flowchart.jpg)
+![MR Flow chart](https://github.com/sharanyavenkat25/MapReduce-based-Mini-HIVE/blob/master/sqlEngine/MapReduce_flowchart.jpg)
 
