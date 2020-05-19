@@ -1,4 +1,4 @@
-# MapReduce-based-Mini-HIVE
+# MapReduce-based-Mini-HIVE 
 
 ## Abstarct
 Mini-Hive is an SQL based engine which gives an SQL like interface to query data stored in various databases and file systems that integrate with Hadoop.
